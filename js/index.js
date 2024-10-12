@@ -1,19 +1,13 @@
-document.write("Pontos: ");
+let idade = parseInt(prompt("Qual é a tua idade?"));
 
-let pontos = 10
-
-document.write(pontos);
-if (pontos >= 1) {
-    pontos = pontos + 20;
-} else if (pontos !== 50) {
-    pontos = pontos - 50;
-} else if (pontos <= 30) {
-    pontos = 0;
-} 
-
-if (pontos != 25) {
-    console.log("Ganhaste!");
+for (let i = 0; i <= 100; i++) {
+    if(i%2 == 0)
+        console.log(i);
 }
 
-console.log(pontos);
+let counter = 0;
+while (counter < 100) {
+    console.log(counter);
+    counter += 2;
+}
 
