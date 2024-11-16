@@ -1,13 +1,29 @@
-let idade = parseInt(prompt("Qual é a tua idade?"));
 
-for (let i = 0; i <= 100; i++) {
-    if(i%2 == 0)
-        console.log(i);
+function rectArea() {
+    let num1 = parseInt(prompt("Diga a altura:"));
+    let num2 = parseInt(prompt("Diga a largura:"));
+
+    let area = num1 * num2;
+    return area;
 }
 
-let counter = 0;
-while (counter < 100) {
-    console.log(counter);
-    counter += 2;
+function circleArea() {
+    let num1 = parseInt(prompt("Diga o raio:"));
+
+    let area = num1 * num1 * Math.PI;
+    return area;
 }
 
+let figura;
+
+while ((figura = prompt("Escolha a figura geométrica:(C = circulo, T =triangulo, R = rectangulo, Q = sair)")) != "Q") {
+
+    console.log(figura);
+    if (figura == "C") {
+        console.log(circleArea());
+    } else if (figura == "T") {
+        console.log(rectArea() / 2);
+    } else if (figura == "R") {
+        console.log(rectArea());
+    }
+}
