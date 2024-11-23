@@ -8,16 +8,15 @@ header {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background-color: aliceblue;
 }
 
-header img {
+header #logo {
     width: 5%;
     height: auto;
 }
 
-header ul {
+header .navbar {
     width: 95%;
     display: flex;
     flex-direction: row;
@@ -36,4 +35,23 @@ main h1 {
 main p {
     width: 60%;
     margin: 50px auto;
+}
+
+main .table {
+    width: 30%;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+}
+
+main .table th,
+main .table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(160 160 160);
+}
+
+main .table .students,
+main .table .score {
+    background-color: lavender;
 }
